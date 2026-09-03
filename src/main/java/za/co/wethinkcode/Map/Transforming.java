@@ -3,13 +3,20 @@ package za.co.wethinkcode.Map;
 import java.util.*;
 public class Transforming {
 
-    public static List<Integer> squares(List<Integer> professionalNames){
+    public static List<Integer> squares(List<Integer> integers){
 
-        return professionalNames.stream().map((e) -> e * 2).toList();
+        return integers.stream().map((e) -> e * 2).toList();
     }
 
-    public static List<Integer> cubes(List<Integer> professionalNames){
+    public static List<Integer> cubes(List<Integer> numbs){
 
-        return professionalNames.stream().map((e) -> e * 3).toList();
+        return numbs.stream().map((e) -> e * 3).toList();
     }
+
+    public static List<String> upperCases(List<String> professionalNames){
+
+        return professionalNames.stream().map(String::toUpperCase).toList();
+    }
+
+
 }
